@@ -64,7 +64,7 @@ Example:
 This command counts how many requests belong to each service.
 
 ```bash
-python mr_job_tasks.py --job request sample.csv
+python mr_job_tasks.py --job request sample_data.csv
 ```
 
 Example output:
@@ -88,7 +88,7 @@ status_code >= 500
 Run:
 
 ```bash
-python mr_job_tasks.py --job error sample.csv
+python mr_job_tasks.py --job error sample_data.csv
 ```
 
 Example output:
@@ -113,7 +113,7 @@ response_time_ms > 800
 Run:
 
 ```bash
-python mr_job_tasks.py --job slow sample.csv
+python mr_job_tasks.py --job slow sample_data.csv
 ```
 
 Example output:
@@ -122,4 +122,15 @@ Example output:
 payment-service,/payments 512
 search-service,/search 438
 ```
+
+# Ray Extension for Service Degradation Detection
+
+## Environment
+- Python 3.10 - 3.12
+- Ray 2.55.1+
+- Pandas
+
+## Install dependencies
+```bash
+pip install ray pandas
 

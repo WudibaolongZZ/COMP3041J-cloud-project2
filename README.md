@@ -64,7 +64,7 @@ Example:
 This command counts how many requests belong to each service.
 
 ```bash
-python mr_job_tasks.py --job request sample_data.csv
+python mapreduce/mr_job_tasks.py --job request data/sample_data.csv
 ```
 
 Example output:
@@ -88,7 +88,7 @@ status_code >= 500
 Run:
 
 ```bash
-python mr_job_tasks.py --job error sample_data.csv
+python mapreduce/mr_job_tasks.py --job error data/sample_data.csv
 ```
 
 Example output:
@@ -113,7 +113,7 @@ response_time_ms > 800
 Run:
 
 ```bash
-python mr_job_tasks.py --job slow sample_data.csv
+python mapreduce/mr_job_tasks.py --job slow data/sample_data.csv
 ```
 
 Example output:

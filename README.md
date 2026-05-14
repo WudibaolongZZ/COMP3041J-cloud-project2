@@ -39,7 +39,7 @@ pip install mrjob
 The input dataset is a CSV log file:
 
 ```text
-sample.csv
+data/sample_data.csv
 ```
 
 Each log record contains fields such as:

@@ -1,0 +1,31 @@
+Processing file: full_data.csv
+Reading CSV file in chunks...
+  Loaded 10 chunks...
+  Loaded 20 chunks...
+  Loaded 30 chunks...
+  Loaded 40 chunks...
+  Loaded 50 chunks...
+Total chunks: 50
+Processing chunks in parallel with Ray...
+Aggregating results...
+Detecting degraded services...
+
+==================================================
+DEGRADED SERVICES DETECTION RESULTS
+==================================================
+search-service, high slow request rate
+order-service, repeated timeout errors
+payment-service, high slow request rate
+notification-service, repeated timeout errors
+auth-service, repeated timeout errors
+
+==================================================
+Total execution time: 1.38 seconds
+==================================================
+
+Detailed statistics (for validation):
+  search-service: total=10616, slow_rate=43.2%, error_rate=3.7%, timeout=446
+  order-service: total=10937, slow_rate=10.5%, error_rate=3.1%, timeout=308
+  payment-service: total=7914, slow_rate=27.0%, error_rate=7.8%, timeout=664
+  notification-service: total=8412, slow_rate=6.7%, error_rate=2.4%, timeout=164
+  auth-service: total=12121, slow_rate=4.5%, error_rate=1.6%, timeout=199
